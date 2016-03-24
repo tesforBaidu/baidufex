@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frontend 4</title>
+    <style>
+        .test{
+            padding:50px;
+            height:800px;
+            width:800px;
+            margin:50px;
+            background-color:#F59494;
+            position:relative;
+        }
+
+        .wrap{
+            position:absolute;
+            top:50%;
+            left:50%;
+            height:200px;
+            width:400px;
+            margin-left:-200px;
+            margin-top:-100px;
+            background-color: #ccc;
+            overflow:hidden;
+
+
+        }
+        .corner{
+            border-radius: 50%;
+            width:100px;
+            height:100px;
+            position:absolute;
+            background-color:#fc0;
+
+
+        }
+        .topCorner{
+              position:absolute;
+              top:-50px;
+              left:-50px;
+          }
+        .bottomCorner{
+            position:absolute;
+            bottom:-50px;
+            right:-50px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+   <div class="wrap">
+
+           <div class="topCorner corner"></div>
+           <div class="bottomCorner corner"></div>
+
+   </div>
+
+</body>
+</html>
