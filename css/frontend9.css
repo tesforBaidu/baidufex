@@ -1,0 +1,354 @@
+*{
+    padding:0px;
+    margin:0px;
+    text-decoration: none;
+    font-size:12px;
+    font-family: '黑体';
+}
+/*
+  通用样式
+*/
+body{
+    height:100%;
+}
+.smallSelect{
+    width:71px;
+    height:26px;
+    padding-left:5px;
+}
+.largeSelect{
+    width:120px;
+    height:25px;
+    padding-left:3px;
+}
+select{
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background:#fff url("../img/task9/select.fw.png") no-repeat right center ;
+}
+.searchBtn{
+    background-color: #388AC1;
+    width:50px;
+    height:25px;
+    border-radius: 5px;
+    border:none;
+    color:#fff;
+}
+.clearfix:after{
+    content:"";
+    display:block;
+    clear:both;
+    width: 0;height: 0;
+    visibility:hidden;
+
+}
+
+/**
+头部样式*/
+.header{
+    background-color:#2189BF;
+    height:56px;
+    padding-left:50px;
+    padding-right:53px;
+
+
+}
+.header img:first-child{
+    float:left;
+    margin-top:10px;
+}
+.header a{
+    color:#fff;
+    display:inline-block;
+    margin-top:20px;
+    margin-left:30px;
+    float:right;
+    height:16px;
+    width:27px;
+    font-weight:bold;
+    font-family:"黑体";
+    padding-left:15px;
+    background:url("../img/task9/task_1_9_login.png") no-repeat center left;
+}
+.header input{
+    float:right;
+    width:278px;
+    height:28px;
+    margin-top:14px;
+    border-radius: 15px;
+    background: #fff url(../img/task9/task_1_9_search.png)  no-repeat 15px center;
+    padding-left:35px;
+    border:none;
+}
+
+.container{
+    overflow:hidden;
+    min-height:650px;
+}
+/*
+侧边栏*/
+.sideBar{
+    width:261px;
+    background-color: #2A2E3D;
+    float:left;
+    padding-bottom:3000px;
+    margin-bottom:-3000px;
+}
+.sideBar .personInfo{
+    height:150px;
+
+}
+.personInfo .pictureBox{
+    padding:19px 86px 23px 45px;
+    line-height:62px;
+    overflow:hidden;
+}
+.personInfo .pictureBorder{
+    height:46px;
+    width:46px;
+    padding:4px;
+    border:2px solid #fff;
+    border-radius: 50%;
+    float:left;
+}
+.personInfo h3{
+
+    margin-left:72px;
+    font-size:16px;
+    color:#fff;
+}
+
+ .pictureBox img{
+     width:46px;
+     height:46px;
+     border-radius: 50%;}
+ .sizeInfoBox{
+     padding:0px 86px 0px 62px;
+     height:30px;
+     line-height:15px;
+ }
+
+.sizeInfoBox .sizeInfo:first-child{
+    float:left;
+}
+.sizeInfoBox .sizeInfo:last-child{
+    float:right;
+}
+.sizeInfoBox .sizeInfo .number{
+    font-size:16px;
+}
+.sizeInfoBox .line{
+    height:30px;
+    float:left;
+    border-right:2px solid #000;
+    margin-left:30px;
+}
+.sideBar ul{
+    list-style-type: none;
+    color:#6E8096;
+}
+
+.sideBar>ul ul{
+    padding-left:30px;
+}
+.sideBar>ul >li{
+    padding-bottom:35px;
+    padding-left:45px;
+    padding:18px 0 18px 45px;
+}
+.sideBar>ul>li:hover{
+    background-color:#383D4E ;
+}
+.sideBar>ul >li li{
+    margin-top:20px;
+}
+.sideBar> ul>li span{
+    width:12px;
+    height:12px;
+    display:block;
+    float:left;
+    background-position: -67px 0;
+    background-image:url("../img/task9/sprite.png");
+    margin-right:18px;
+
+}
+.sideBar> ul>li li span{
+    margin-right:8px;
+}
+.sideBar ul>li:first-child span{
+
+    background-position: -41px 0;
+
+
+}
+.sideBar ul>li:first-child li>span{
+
+    background-position: -41px 0;
+}
+.sideBar ul>li:first-child li li span{
+
+    background-position: -56px 0;
+}
+.sideBar ul>li:nth-child(2) span{
+
+    background-position: -67px 0;
+
+
+}
+.sideBar ul>li:nth-child(3) span{
+
+    background-position: -20px 0;
+
+
+
+
+}
+.sideBar ul>li:nth-child(4) span{
+
+    background-position: -41px 0;
+
+
+}
+.sideBar ul>li:nth-child(5) span{
+
+    background-position: -41px 0;
+
+
+}
+.sideBar> ul>li.active{
+    background-color: #383D4E;
+    padding-top:14px;
+    padding-bottom:14px;
+
+}
+.sideBar>ul>li.active li:hover{
+    color:#fff;
+}
+.sideBar li.active{
+    color:#fff;
+}
+/*
+内容*/
+.contentBox{
+    margin-left:261px;
+
+    padding-bottom:3000px;
+    margin-bottom:-3000px;
+    background-color:#EEEEED;
+}
+/*
+内容头部样式*/
+.contentBox .contentTitle{
+    background-color:#fff;
+
+    height:30px;
+    line-height:30px;
+    font-size:12.28px;
+
+
+}
+
+.contentBox .contentTitle a{
+    color:#AAAAA9;
+    padding:0 5px 0 5px;
+}
+.contentBox .contentTitle a:hover{
+    color:#6898C1;
+}
+.contentBox .contentTitle a:first-child{
+    padding-right:20px;
+    padding-left:35px;
+}
+.contentBox .contentTitle a:last-child{
+    color:#6898C1;
+}
+
+
+.contentBox .content{
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:20px;
+}
+/*模块一样式*/
+.module1{
+    height:85px;
+    -webkit-box-shadow: 1px 0px  1px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 1px 0px  1px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 0px  1px 1px rgba(0,0,0,0.1);
+    border-right:5px solid #838A95;
+    box-sizing: border-box;
+    min-width:900px;
+
+
+}
+.module1 >div{
+    float:left;
+    padding-top:13px;
+
+    box-sizing: border-box;
+}
+.module1 label{
+    color:#D4D4D4;
+    margin-right:18px;
+}
+.module1 input[type='date']{
+    box-sizing: border-box;
+    height:27px;
+}
+
+.module1> div:first-child{
+    width:21.28%;
+    padding-left:31px;
+    padding-right:38px;
+}
+.module1> div:nth-child(2)
+{
+    width:25%;
+}
+.module1> div:nth-child(3){
+    width:37%;
+}
+.module1> div:last-child{
+    width:37%;
+}
+.module1 input[type='submit']{
+    margin-top:28px;
+}
+.buySaleBox>div>div:first-child,.saleInfo .row:first-child{
+    margin-bottom:5px;
+}
+.buySaleBox div.personBox{
+    float:left;
+}
+
+.buySaleBox .changeBox{
+
+    display:inline-block;
+    width:27px;
+    height:38px;
+    background-image: url("../img/task9/change.png");
+    margin-top:10px;
+    background-postion:-15px -15px;
+    position:relative;
+
+}
+.changeBox a{
+    position:absolute;
+    left:12px;
+    top:12px;
+    color:#fff;
+}
+.inputContainer_herizon{
+    display:inline-block;
+}
+
+.saleInfo .row:first-child .inputContainer_herizon:first-child{
+    margin-right:18px;
+
+}
+.saleInfo .row:last-child .inputContainer_herizon:first-child{
+    margin-right:12px;
+
+}
